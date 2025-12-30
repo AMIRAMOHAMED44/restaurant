@@ -321,3 +321,19 @@ input:focus , select:focus{
 .social-icons a:hover {
     color: #ffc107;
 }
+
+
+/* Fix horizontal scroll on small screens */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Fix carousel overflow only on small screens */
+@media (max-width: 768px) {
+    header .carousel {
+        left: 0;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
